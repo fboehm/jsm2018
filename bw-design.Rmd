@@ -1,0 +1,22 @@
+---
+title: "Backward designing my presentation"
+author: "Frederick Boehm"
+date: "6/8/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## What are my learning objectives for the audience members?
+
+1. Increase awareness of my test & its R package & R package's presence on github
+
+
+
+what to say about ease of use? Duration of calculations?
+
+
+
+
