@@ -13,9 +13,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1. Increase awareness of my test & its R package & R package's presence on github
 
+2. Recognize the role of relatedness in the model and in calculating the test statistic
 
+3. Recognize the inadequacies of previous tests (of pleiotropy vs separate QTL) and appreciate the need for a test that works with multiparental populations
+
+4. Address the relationship between testing pleiotropy vs separate QTL and dissection of causal pathways
+
+
+
+
+## Ideas & Questions
 
 what to say about ease of use? Duration of calculations?
+
+** Need a slide to demo package install from github? **
 
 
 
