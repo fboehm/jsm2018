@@ -3,6 +3,7 @@ title: "Presentation Ninja"
 subtitle: "⚔<br/>with xaringan"
 author: "Yihui Xie"
 date: "June 20, 2018"
+bibliography: research.bib
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -28,6 +29,65 @@ class: center, middle
 # xaringan
 
 ### /ʃæ.'riŋ.ɡæn/
+
+---
+class: center, middle
+
+# Testing pleiotropy vs. separate QTL in multiparental populations
+
+## Frederick Boehm, Brian Yandell, and Karl Broman
+
+
+---
+
+# QTL mapping in multiparental populations
+
+- High-density genotypes  
+- High-dimensional phenotypes  
+- Enhanced mapping precision due to multiple founder lines
+
+
+---
+
+# Diversity Outbred mice
+
+- 8 founder lines  
+
+
+---
+
+# @logan2013high and @recla2014precise
+
+- Diversity Outbred mice
+- 26 Behavioral phenotypes  
+- Univariate QTL mapping revealed:
+  - "Hot plate latency" maps to    
+  - Both "Percent time in light" and "Distance traveled in light" map to 
+
+---
+
+# Results
+
+```{r, echo = FALSE, out.width = '400px'}
+library(knitr)
+include_graphics("figs/all3.png")
+```
+
+
+
+
+---
+
+# Contact information
+
+- frederick.boehm@gmail.com  
+- https://github.com/fboehm  
+- https://github.com/fboehm/qtl2pleio  
+- https://fboehm.us/  
+
+
+
+
 
 ---
 class: inverse, center, middle
