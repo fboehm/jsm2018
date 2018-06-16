@@ -20,7 +20,6 @@ library(knitr)
 
 
 ---
-class: center, middle
 
 # Introduction
 
@@ -141,7 +140,10 @@ include_graphics("figs/all3.png", auto_pdf = FALSE)
 
 # Contact information
 
-Fred Boehm, fjboehm@wisc.edu
+- frederick.boehm@gmail.com  
+- https://github.com/fboehm  
+- https://github.com/fboehm/qtl2pleio  
+- https://fboehm.us/  
 
 
 ---
