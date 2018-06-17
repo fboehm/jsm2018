@@ -18,8 +18,19 @@ library(knitr)
 ```
 
 
-
----
+```{r, load_refs, echo=FALSE, cache=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE, 
+           bib.style = "authoryear", 
+           cite.style = 'authoryear', 
+           style = "markdown",
+           hyperlink = FALSE, 
+           dashed = FALSE, 
+           longnamesfirst = FALSE,
+           max.names = 2,
+           bibpunct = c(" (", ") ", ",", ",", " and ", " "))
+myBib <- ReadBib("./research.bib", check = FALSE)
+```
 
 # Introduction
 
@@ -36,7 +47,7 @@ library(knitr)
 
 # Background
 
-- @jiang1995multiple developed a pleiotropy vs. separate QTL test for F2 mice
+- `r Citet(myBib, "jiang1995multiple")` developed a pleiotropy vs. separate QTL test for F2 mice
     - Applies to two traits that map to a single genomic region 
     - Pleiotropy is the null hypothesis
     - Separate QTL is the alternative hypothesis
@@ -67,12 +78,12 @@ library(knitr)
 # Test procedure
 
 - Fit the model: $$Y = XB + G + E$$ for each ordered pair of markers
-    - $$G \sim MN(0, K, V_g)$$    
-    - $$E \sim MN(0, I, V_e)$$    
+    - $G \sim MN(0, K, V_g)$   
+    - $E \sim MN(0, I, V_e)$    
     - $X$ contains allele probabilities    
     - $B$ contains allele effects    
 - Calculate likelihood for each model fit    
-- Test statistic: $$- \log_{10} \frac{\max L_0(B, \Sigma, \omega_1, \omega_2)}{\max L_A(B, \Sigma, \omega_1, \omega_2)}$$    
+- Test statistic: $$- \log_{10} \frac{\max \text{likelihood under pleiotropy}}{\max \text{likelihood for separate QTL}}$$    
 - Parametric bootstrap to get p-value
 
 
@@ -81,7 +92,7 @@ library(knitr)
 
 # Behavioral genetics
 
-- @logan2013high and @recla2014precise genotyped and phenotyped 261 Diversity Outbred mice    
+- `r Citet(myBib, c("logan2013high", "recla2014precise"), .opts = list(max.names = 1))` genotyped and phenotyped 261 Diversity Outbred mice    
     - Identified *Hydin* as the chromosome 8 gene affecting "hot plate latency" at 57 cM
     - Identified chromosome 8 QTLs for "percent time in light" and "distance traveled in light" at 55 cM    
     - Motivated us to ask if *Hydin* also affects "percent time in light" and "distance traveled in light"    
@@ -95,16 +106,14 @@ library(knitr)
 - Suggest that "percent time in light" and "distance traveled in light" share a single QTL
 - *Hydin* is distinct from that QTL
 
-```{r, echo = FALSE}
-#include_graphics("~/Box Sync/attie/qtl2pleio-manuscript/Rmd/coef_all3.p")
+```{r, echo = FALSE, out.width = "400px"}
+include_graphics("figs/coef_all3.svg")
 ```
 
 
 ---
 
-# Profile LOD plots
-
-- Performed 3 pairwise analyses
+# Profile LOD plots for 3 pairwise analyses
 
 ```{r, echo = FALSE, out.width="400px"}
 include_graphics("figs/all3.png", auto_pdf = FALSE)
@@ -113,7 +122,7 @@ include_graphics("figs/all3.png", auto_pdf = FALSE)
 
 ---
 
-# 3 pairwise tests
+# Three pairwise tests
 
 - "percent time in light" & "hot plate latency": p = 0.109
 - "distance traveled in light" & "hot plate latency": p = 0.108
@@ -150,3 +159,6 @@ include_graphics("figs/all3.png", auto_pdf = FALSE)
 
 # References
 
+```{r, 'refs', results='asis', echo=FALSE}
+PrintBibliography(myBib)
+```
