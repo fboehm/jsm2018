@@ -57,9 +57,9 @@ myBib <- ReadBib("./research.bib", check = FALSE)
 
 ---
 
-# Challenges
+# Challenges in multiparental populations
 
-- Relatedness    
+- Complex patterns of relatedness    
 - Multiple founder lines    
 - Test statistic calibration
 
@@ -90,13 +90,16 @@ myBib <- ReadBib("./research.bib", check = FALSE)
 
 ---
 
-# Behavioral genetics
+# Application to behavioral genetics data
 
 - `r Citet(myBib, c("logan2013high", "recla2014precise"), .opts = list(max.names = 1))` genotyped and phenotyped 261 Diversity Outbred mice    
     - Identified *Hydin* as the chromosome 8 gene affecting "hot plate latency" at 57 cM
     - Identified chromosome 8 QTLs for "percent time in light" and "distance traveled in light" at 55 cM    
     - Motivated us to ask if *Hydin* also affects "percent time in light" and "distance traveled in light"    
 
+```{r, echo = FALSE, out.width = "300px"}
+include_graphics("figs/ccmice.png")
+```
 
 
 ---
@@ -134,7 +137,7 @@ include_graphics("figs/all3.png", auto_pdf = FALSE)
 # Conclusions
 
 - Evidence for two separate QTL affecting the 3 phenotypes
-    - 1 QTL affects both "distance traveled in light" and "percent time in light"
+    - One QTL affects both "distance traveled in light" and "percent time in light"
     - Second QTL contains *Hydin* and affects "hot plate latency"
 
 
