@@ -116,6 +116,14 @@ include_graphics("figs/coef_all3.svg")
 
 ---
 
+# Profile LOD calculations
+
+
+
+
+
+---
+
 # Profile LOD plots for 3 pairwise analyses
 
 ```{r, echo = FALSE, out.width="400px"}
