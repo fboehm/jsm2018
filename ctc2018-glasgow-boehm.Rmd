@@ -118,7 +118,9 @@ include_graphics("figs/coef_all3.svg")
 
 # Profile LOD calculations
 
-
+- $LOD_{pvl}(\omega_1, \omega_2) = ll_{10}(\omega_1, \omega_2) - \max ll_{10}(\omega, \omega)$  
+- $\text{profile LOD}_1(\omega_1) = \max_{\omega_2}\text{LOD}_{pvl}(\omega_1, \omega_2)$
+- $LOD_{p}(\omega) = ll_{10}(\omega, \omega) - \max ll_{10}(\omega, \omega)$
 
 
 
