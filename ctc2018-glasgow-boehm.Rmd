@@ -175,3 +175,4 @@ include_graphics("figs/all3.png", auto_pdf = FALSE)
 ```{r, 'refs', results='asis', echo=FALSE}
 PrintBibliography(myBib)
 ```
+
