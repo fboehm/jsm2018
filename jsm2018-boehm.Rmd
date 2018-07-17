@@ -57,6 +57,18 @@ myBib <- ReadBib("./research.bib", check = FALSE)
 
 ---
 
+# Multiparental populations
+
+```{r, echo = FALSE, out.width = "700px"}
+include_graphics("figs/ri8.png")
+```
+
+
+
+
+
+---
+
 # Challenges in multiparental populations
 
 - Complex patterns of relatedness    
