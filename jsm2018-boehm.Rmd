@@ -118,9 +118,12 @@ include_graphics("figs/coef_all3.svg")
 
 # Profile LOD calculations
 
-- $LOD_{pvl}(\omega_1, \omega_2) = ll_{10}(\omega_1, \omega_2) - \max ll_{10}(\omega, \omega)$  
-- $\text{profile LOD}_1(\omega_1) = \max_{\omega_2}\text{LOD}_{pvl}(\omega_1, \omega_2)$
-- $LOD_{p}(\omega) = ll_{10}(\omega, \omega) - \max ll_{10}(\omega, \omega)$
+1. $LOD_{pvl}(\text{marker1}, \text{marker2}) =$ 
+$\text{log-likelihood}(\text{marker1}, \text{marker2}) - \max \text{log-likelihood}(\text{marker}, \text{marker})$  
+
+2. $\text{profile LOD}_1(\text{marker1}) = \max_{\text{marker2}}\text{LOD}_{pvl}(\text{marker1}, \text{marker2})$  
+
+3. $LOD_{p}(\text{marker}) =  \text{log-likelihood}(\text{marker}, \text{marker}) - \max \text{log-likelihood}(\text{marker}, \text{marker})$
 
 
 
