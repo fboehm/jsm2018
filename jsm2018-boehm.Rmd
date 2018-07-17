@@ -1,7 +1,7 @@
 ---
 title: "Testing pleiotropy vs. separate QTL in multiparental populations"
 author: "Frederick Boehm, Brian Yandell, and Karl Broman"
-date: "June 20, 2018"
+date: "July 30, 2018"
 bibliography: research.bib
 output:
   xaringan::moon_reader:
