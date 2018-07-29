@@ -42,6 +42,20 @@ myBib <- ReadBib("./research.bib", check = FALSE)
 
 - New analysis tools, such as our test of pleiotropy vs. separate QTL, are needed 
 
+---
+
+# Multiparental populations
+
+```{r, echo = FALSE, out.width = "700px"}
+include_graphics("figs/ri8.png")
+```
+
+
+
+
+
+
+
 
 ---
 
@@ -53,17 +67,6 @@ myBib <- ReadBib("./research.bib", check = FALSE)
     - Separate QTL is the alternative hypothesis
     - Perform a two-dimensional QTL scan 
     - Calculate likelihood ratio test statistic
-
-
----
-
-# Multiparental populations
-
-```{r, echo = FALSE, out.width = "700px"}
-include_graphics("figs/ri8.png")
-```
-
-
 
 
 
