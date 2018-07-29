@@ -170,7 +170,10 @@ include_graphics("figs/all3.png", auto_pdf = FALSE)
 
 # Future directions
 
-- Develop methods for analyzing multiple phenotypes in a single test
+- Develop methods for analyzing multiple phenotypes in a single test  
+- Accelerate calculations by writing costly calculations in C++  
+- Enhance user interface for R package, qtl2pleio  
+
 
 
 ---
@@ -178,7 +181,6 @@ include_graphics("figs/all3.png", auto_pdf = FALSE)
 # Contact information
 
 - frederick.boehm@gmail.com  
-- https://github.com/fboehm  
 - https://github.com/fboehm/qtl2pleio  
 - https://fboehm.us/  
 
