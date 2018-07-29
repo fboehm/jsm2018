@@ -75,7 +75,7 @@ include_graphics("figs/ri8.png")
 # Challenges in multiparental populations
 
 - Complex patterns of relatedness    
-- Multiple founder lines    
+- Multiple founder lines (vs. exactly two founder lines in Jiang & Zeng)
 - Test statistic calibration
 
 
